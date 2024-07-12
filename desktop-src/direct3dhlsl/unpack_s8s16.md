@@ -1,9 +1,9 @@
 ---
-description: Unpacks a signed 8-bit value into a signed 16-bit value.
+description: 
 nms.assetid:
 title: unpack_s8s16
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # unpack_s8s16
 
-Unpacks a signed 8-bit value into a signed 16-bit value.
+
 
 
 ## Syntax
@@ -27,15 +27,6 @@ int16_t<4> unpack_s8s16(p32i8 pk);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *pk* | [in] A packed integer; a signed 32-bit integer value from which to unpack four 8-bit signed integer values.  |
-
-## Return value
-
- Returns a vector of size 4 and component type of int16_t, consisting of four 16-bit signed integers resulted from unpacking the input 32-bit integer value.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -53,9 +44,6 @@ This function is supported in the following shader models.
 ## Shader Stages
 
 
-## Remarks
-
-unpack_s8s16 unpacks a signed 8-bit value into a signed 16-bit value, useful for data conversion in shaders.
 
 ## See also
 

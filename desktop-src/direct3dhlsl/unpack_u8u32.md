@@ -1,9 +1,9 @@
 ---
-description: Unpacks an unsigned 8-bit value into an unsigned 32-bit value.
+description: 
 nms.assetid:
 title: unpack_u8u32
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # unpack_u8u32
 
-Unpacks an unsigned 8-bit value into an unsigned 32-bit value.
+
 
 
 ## Syntax
@@ -27,15 +27,6 @@ uint<4> unpack_u8u32(p32u8 pk);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *pk* | [in] The parameter pk is an input to the 'unpack_u8u32' function. It is a uint input value, packed with 4 8-bit values which need to be unpacked.  |
-
-## Return value
-
- This HLSL intrinsic function 'unpack_u8u32' returns a vector of 4 unsigned integers. Each component in the vector corresponds to an 8-bit value unpacked from the input uint parameter 'pk'. The returned values range from 0 to 255.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -53,9 +44,6 @@ This function is supported in the following shader models.
 ## Shader Stages
 
 
-## Remarks
-
-unpack_u8u32 unpacks an unsigned 8-bit value into an unsigned 32-bit value, useful for data conversion in shaders.
 
 ## See also
 

@@ -1,9 +1,9 @@
 ---
-description: Performs a multi-wave prefix OR operation across all lanes in the wave and returns the result.
+description: 
 nms.assetid:
 title: WaveMultiPrefixBitOr
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # WaveMultiPrefixBitOr
 
-Performs a multi-wave prefix OR operation across all lanes in the wave and returns the result.
+
 
 
 ## Syntax
@@ -27,16 +27,6 @@ any_int<> WaveMultiPrefixBitOr(any_int<> value, uint<4> mask);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *value* | [in] This is the value to perform the bitwise OR operation on. This intrinisic will perform the operation across all active lanes in the wave  |
-| *mask* | [in] This mask determines which lanes in the wave should input their value into the bitwise OR operation. It should be of the same type as the 'value' parameter  |
-
-## Return value
-
- This function returns a scalar, vector, or matrix with component type of int or uint that represents the result of the bitwise OR operation performed on the parameter 'value' across the appropriate lanes in the wave as determined by the parameter 'mask'
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -71,9 +61,6 @@ This function is supported in the following shader models.
 * [**Callable Shader**](../direct3d12/callable-shader.md)
 * **Node Shader**
 
-## Remarks
-
-WaveMultiPrefixBitOr computes the bitwise OR across wavefront threads, useful for parallel bit aggregation operations.
 
 ## See also
 

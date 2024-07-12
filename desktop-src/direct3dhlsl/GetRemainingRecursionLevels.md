@@ -1,9 +1,9 @@
 ---
-description: Returns how many levels of recursion remain.
+description: 
 nms.assetid:
 title: GetRemainingRecursionLevels
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # GetRemainingRecursionLevels
 
-Returns how many levels of recursion remain.
+
 
 
 ## Syntax
@@ -27,14 +27,6 @@ uint GetRemainingRecursionLevels();
 ```
 
 
-## Parameters
-
-This function has no parameters.
-
-
-## Return value
-
- This intrinsic function returns a scalar template type with a component of unsigned integer (uint). The returned value represents the number of remaining recursion levels available in the current ray tracing shader invocation.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -52,9 +44,6 @@ This function is supported in the following shader models.
 
 * **Node Shader**
 
-## Remarks
-
-GetRemainingRecursionLevels retrieves the remaining levels of recursion in a shader program, useful for managing recursive algorithms.
 
 ## See also
 

@@ -1,9 +1,9 @@
 ---
-description: Packs and clamps a signed 8-bit value.
+description: 
 nms.assetid:
 title: pack_clamp_s8
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # pack_clamp_s8
 
-Packs and clamps a signed 8-bit value.
+
 
 
 ## Syntax
@@ -27,15 +27,6 @@ p32i8 pack_clamp_s8(sint16or32_only<4> v);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *v* | [in] This is an input parameter representing the scalar components to be packed into a 4 byte value.  |
-
-## Return value
-
- This function returns a 4 byte packed scalar of type int8_t4_packed, where the scalar components defined by 'v' are clamped and packed into this return value.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -53,9 +44,6 @@ This function is supported in the following shader models.
 ## Shader Stages
 
 
-## Remarks
-
-pack_clamp_s8 packs a clamped signed 8-bit integer into a 32-bit integer, useful for safe conversion and storage in buffers.
 
 ## See also
 

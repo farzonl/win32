@@ -1,9 +1,9 @@
 ---
-description: Is used to set the output counts for different types of mesh primitives in geometry shaders.
+description: 
 nms.assetid:
 title: SetMeshOutputCounts
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # SetMeshOutputCounts
 
-Is used to set the output counts for different types of mesh primitives in geometry shaders.
+
 
 
 ## Syntax
@@ -27,16 +27,6 @@ void SetMeshOutputCounts(uint numVertices, uint numPrimitives);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *numVertices* | [in] An integer that specifies the number of vertices to be output by the mesh shader.  |
-| *numPrimitives* | [in] An integer that specifies the number of primitives to be output by the mesh shader.  |
-
-## Return value
-
- This function does not return a value.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -56,9 +46,6 @@ This function is supported in the following shader models.
 
 * [**Mesh Shader**](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html)
 
-## Remarks
-
-SetMeshOutputCounts configures the number of output vertices and primitives per mesh shader invocation, enabling dynamic mesh generation.
 
 ## See also
 

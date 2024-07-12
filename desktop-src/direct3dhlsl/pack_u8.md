@@ -1,9 +1,9 @@
 ---
-description: Packs an unsigned 8-bit value.
+description: 
 nms.assetid:
 title: pack_u8
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # pack_u8
 
-Packs an unsigned 8-bit value.
+
 
 
 ## Syntax
@@ -27,15 +27,6 @@ p32u8 pack_u8(any_int16or32<4> v);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *v* | [in] The input vector to be packed.  |
-
-## Return value
-
- Returns a 4-byte packed scalar of template type uint8_t4_packed. Each unit contains a component of the original vector.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -53,9 +44,6 @@ This function is supported in the following shader models.
 ## Shader Stages
 
 
-## Remarks
-
-pack_u8 packs an unsigned 8-bit integer into a 32-bit integer, useful for compact storage of smaller integers in buffers.
 
 ## See also
 

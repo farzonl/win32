@@ -1,9 +1,9 @@
 ---
-description: A conditional selection function that chooses between two values based on a condition.
+description: 
 nms.assetid:
 title: select
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,28 +16,29 @@ api_type:
 
 # select
 
-A conditional selection function that chooses between two values based on a condition.
+
 
 
 ## Syntax
 
 
 ```syntax
+any<> select(bool<> cond, any<> t, any<> f);
+```
+
+```syntax
 any_sampler select(bool cond, any_sampler t, any_sampler f);
 ```
 
 
-## Parameters
+## Type Description
 
-| Item | Description |
-|------|-------------|
-| *cond* | [in] The condition for the selection. If component of 'cond' is zero, then the corresponding component of 'f' is selected. Else, the corresponding component of 't' is selected.  |
-| *t* | [in] The value to return if the condition is true (non-zero).  |
-| *f* | [in] The value to return if the condition is false (zero).  |
-
-## Return value
-
- Returns a template type which can be scalar, vector, or matrix and component type of float, int, or uint. The returned value corresponds to either 't' or 'f' depending on the 'cond' value.
+| Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
+|-------|--------------------------------------------------------------------|----------------------------------------------------------------------|------|
+| *ret* | [**scalar**](../direct3dhlsl/dx-graphics-hlsl-scalar.md), [**vector**](../direct3dhlsl/dx-graphics-hlsl-vector.md), or [**matrix**](../direct3dhlsl/dx-graphics-hlsl-matrix.md) | **bool**, [**float**](../WinProg/windows-data-types), or [**int**](../WinProg/windows-data-types) | any |
+| *cond* | [**scalar**](../direct3dhlsl/dx-graphics-hlsl-scalar.md), [**vector**](../direct3dhlsl/dx-graphics-hlsl-vector.md), or [**matrix**](../direct3dhlsl/dx-graphics-hlsl-matrix.md) | **bool** | any |
+| *t* | [**scalar**](../direct3dhlsl/dx-graphics-hlsl-scalar.md), [**vector**](../direct3dhlsl/dx-graphics-hlsl-vector.md), or [**matrix**](../direct3dhlsl/dx-graphics-hlsl-matrix.md) | **bool**, [**float**](../WinProg/windows-data-types), or [**int**](../WinProg/windows-data-types) | any |
+| *f* | [**scalar**](../direct3dhlsl/dx-graphics-hlsl-scalar.md), [**vector**](../direct3dhlsl/dx-graphics-hlsl-vector.md), or [**matrix**](../direct3dhlsl/dx-graphics-hlsl-matrix.md) | **bool**, [**float**](../WinProg/windows-data-types), or [**int**](../WinProg/windows-data-types) | any |
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -52,6 +53,7 @@ any_sampler select(bool cond, any_sampler t, any_sampler f);
 This function is supported in the following shader models.
 |Shader Model |	Supported|
 |-------------|----------|
+|HLSL 2021 and higher shader models | yes |
 
 ## Shader Stages
 
@@ -68,4 +70,4 @@ int3 Z = X ? 1 : 0;
 
 
 - [**Intrinsic Functions (DirectX HLSL)**](../direct3dhlsl/dx-graphics-hlsl-intrinsic-functions.md)
-- ** See [HLSL 2021 Logical operation short-circuiting for scalars](https://github.com/microsoft/DirectXShaderCompiler/wiki/HLSL-2021#logical-operation-short-circuiting-for-scalars)**
+- **See [HLSL 2021 Logical operation short-circuiting for scalars](https://github.com/microsoft/DirectXShaderCompiler/wiki/HLSL-2021#logical-operation-short-circuiting-for-scalars)**

@@ -1,9 +1,9 @@
 ---
-description: Returns the count of bits set to 1 on groups of lanes identified by a bitmask.
+description: 
 nms.assetid:
 title: WaveMultiPrefixCountBits
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # WaveMultiPrefixCountBits
 
-Returns the count of bits set to 1 on groups of lanes identified by a bitmask.
+
 
 
 ## Syntax
@@ -27,16 +27,6 @@ uint WaveMultiPrefixCountBits(bool value, uint<4> mask);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *value* | [in] This is a scalar value or a component-wise vector of type uint that represents the input values for the function.  |
-| *mask* | [in] This is an optional parameter and a scalar type of uint which specifies the mask to apply before counting bits.  |
-
-## Return value
-
- This function returns an output of the same shape as 'value'. Each returned component contains a count of the number of bits set in each corresponding component of 'value', after applying the optional bitmask 'mask'. The output is not a running count but a multi-threaded count where each component accumulation is done independently.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -71,9 +61,6 @@ This function is supported in the following shader models.
 * [**Callable Shader**](../direct3d12/callable-shader.md)
 * **Node Shader**
 
-## Remarks
-
-WaveMultiPrefixCountBits counts the number of set bits across wavefront threads, facilitating advanced bit manipulation tasks.
 
 ## See also
 

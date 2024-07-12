@@ -1,9 +1,9 @@
 ---
-description: Unpacks an unsigned 8-bit value into an unsigned 16-bit value.
+description: 
 nms.assetid:
 title: unpack_u8u16
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # unpack_u8u16
 
-Unpacks an unsigned 8-bit value into an unsigned 16-bit value.
+
 
 
 ## Syntax
@@ -27,15 +27,6 @@ uint16_t<4> unpack_u8u16(p32u8 pk);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *pk* | [in] A packed uint32_t value from which to extract a four-component unsigned 16-bit integer vector.  |
-
-## Return value
-
- Returns a four-component vector of type uint16_t. Each component contains a 16-bit integer extracted from the input packed uint32_t value, 'pk'.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -53,9 +44,6 @@ This function is supported in the following shader models.
 ## Shader Stages
 
 
-## Remarks
-
-unpack_u8u16 unpacks an unsigned 8-bit value into an unsigned 16-bit value, useful for data conversion in shaders.
 
 ## See also
 

@@ -1,9 +1,9 @@
 ---
-description: Ensures non-uniform indexing for resources like textures in shaders.
+description: 
 nms.assetid:
 title: NonUniformResourceIndex
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # NonUniformResourceIndex
 
-Ensures non-uniform indexing for resources like textures in shaders.
+
 
 
 ## Syntax
@@ -27,15 +27,6 @@ any<> NonUniformResourceIndex(any<> index);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *index* | [in] This parameter represents the indexing value used  by the NonUniformResourceIndex function.  |
-
-## Return value
-
- Returns the non-uniform resource index. The return type could be a scalar, vector, or matrix and component type of boolean, float, or integer depending on the context it's been used.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -48,13 +39,11 @@ any<> NonUniformResourceIndex(any<> index);
 This function is supported in the following shader models.
 |Shader Model |	Supported|
 |-------------|----------|
+|[Shader Model 6](../direct3dhlsl/shader-model-6-0.md) and higher shader models | yes |
 
 ## Shader Stages
 
 
-## Remarks
-
-Use NonUniformResourceIndex to access resources in shaders where the access pattern is not uniform across all threads.
 
 ## See also
 

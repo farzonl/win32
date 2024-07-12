@@ -1,9 +1,9 @@
 ---
-description: Converts integer bit patterns to half-precision floating-point values.
+description: 
 nms.assetid:
 title: asfloat16
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # asfloat16
 
-Converts integer bit patterns to half-precision floating-point values.
+
 
 
 ## Syntax
@@ -27,15 +27,6 @@ float16_t<> asfloat16(numeric16_only<> x);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *x* | [in] The input vector or scalar to be converted to a float16 type.  |
-
-## Return value
-
- Returns a scalar, elementwise vector, or elementwise matrix with its value(s) converted to a float16 type.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -48,13 +39,11 @@ float16_t<> asfloat16(numeric16_only<> x);
 This function is supported in the following shader models.
 |Shader Model |	Supported|
 |-------------|----------|
+|[Shader Model 6.2](https://github.com/microsoft/DirectXShaderCompiler/wiki/Shader-Model-6.2) and higher shader models | yes |
 
 ## Shader Stages
 
 
-## Remarks
-
-asfloat16 converts 16-bit integer values to half-precision floating point values, optimizing storage and arithmetic in shaders.
 
 ## See also
 

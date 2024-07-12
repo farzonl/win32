@@ -1,9 +1,9 @@
 ---
-description: Performs a multi-wave prefix XOR operation across all lanes in the wave and returns the result.
+description: 
 nms.assetid:
 title: WaveMultiPrefixBitXor
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # WaveMultiPrefixBitXor
 
-Performs a multi-wave prefix XOR operation across all lanes in the wave and returns the result.
+
 
 
 ## Syntax
@@ -27,16 +27,6 @@ any_int<> WaveMultiPrefixBitXor(any_int<> value, uint<4> mask);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *value* | [in] This parameter represents the value which will be XOR'd on all active lanes.  |
-| *mask* | [in] This is the bitmask used to specify which lanes contribute to the operation.  |
-
-## Return value
-
- The function returns a template scalar, vector, or matrix type with a component of int or uint which holds the result of the binary XOR operation across the bitmask-specified lanes.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -71,9 +61,6 @@ This function is supported in the following shader models.
 * [**Callable Shader**](../direct3d12/callable-shader.md)
 * **Node Shader**
 
-## Remarks
-
-WaveMultiPrefixBitXor computes the bitwise XOR across wavefront threads, useful for parallel bit manipulation tasks.
 
 ## See also
 

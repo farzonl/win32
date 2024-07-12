@@ -1,9 +1,9 @@
 ---
-description: 2D half dot product with accumulate to float.
+description: 
 nms.assetid:
 title: dot2add
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # dot2add
 
-2D half dot product with accumulate to float.
+
 
 
 ## Syntax
@@ -27,17 +27,6 @@ float dot2add(float16_t<2> a, float16_t<2> b, float c);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *a* | [in] A vector argument representing the first operand in the dot product.  |
-| *b* | [in] A vector argument representing the second operand in the dot product.  |
-| *c* | [in] A scalar argument representing an additional value to add after completing the dot product between vectors a and b.  |
-
-## Return value
-
- Returns a scalar of type float that is the result of the dot product of vectors a and b, plus the scalar value c, allowing a direct add operation after the dot product calculation.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -57,9 +46,6 @@ This function is supported in the following shader models.
 ## Shader Stages
 
 
-## Remarks
-
-dot2add computes a dot product with two vectors, enhancing performance for 2D vector operations in shaders.
 
 ## See also
 

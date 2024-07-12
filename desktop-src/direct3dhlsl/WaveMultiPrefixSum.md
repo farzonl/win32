@@ -1,9 +1,9 @@
 ---
-description: Performs a multi-wave prefix sum operation across all lanes in the wave and returns the result.
+description: 
 nms.assetid:
 title: WaveMultiPrefixSum
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # WaveMultiPrefixSum
 
-Performs a multi-wave prefix sum operation across all lanes in the wave and returns the result.
+
 
 
 ## Syntax
@@ -27,16 +27,6 @@ numeric<> WaveMultiPrefixSum(numeric<> value, uint<4> mask);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *value* | [in] A value of template type (scalar, vector, or matrix) and component type (float or int) that represents the input.  |
-| *mask* | [in] A mask of template type (scalar, vector, or matrix) and component type (float or int) that controls the input value.  |
-
-## Return value
-
- Returns a value of template type (scalar, vector, or matrix) and component type (float or int) that represents the summed prefix of the input within the wavefront where each component is masked separately.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -71,9 +61,6 @@ This function is supported in the following shader models.
 * [**Callable Shader**](../direct3d12/callable-shader.md)
 * **Node Shader**
 
-## Remarks
-
-WaveMultiPrefixSum computes the sum of values across wavefront threads, enabling parallel reduction computations.
 
 ## See also
 

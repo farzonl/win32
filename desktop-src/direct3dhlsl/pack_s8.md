@@ -1,9 +1,9 @@
 ---
-description: Packs a signed 8-bit value.
+description: 
 nms.assetid:
 title: pack_s8
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # pack_s8
 
-Packs a signed 8-bit value.
+
 
 
 ## Syntax
@@ -27,15 +27,6 @@ p32i8 pack_s8(any_int16or32<4> v);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *v* | [in] The packed input parameter of type int8_t4_packed. This represents a 4-component packed 8-bit signed integer, where each component is in the range of -128 to 127.  |
-
-## Return value
-
- A scalar of 4 bytes. The four 8-bit values are packed into the bits of a uint, where the first component is stored in the least significant 8 bits and the forth component is stored in the most significant 8 bits.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -53,9 +44,6 @@ This function is supported in the following shader models.
 ## Shader Stages
 
 
-## Remarks
-
-pack_s8 packs a signed 8-bit integer into a 32-bit integer, useful for compact storage of smaller integers in buffers.
 
 ## See also
 

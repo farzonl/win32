@@ -3,7 +3,7 @@ description:
 nms.assetid:
 title: or
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -27,16 +27,6 @@ bool<> or(any<> x, any<> y);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *x* | [in] The input matrix, vector, or scalar to be logically ORed with y.  |
-| *y* | [in] The input matrix, vector, or scalar to be logically ORed with x.  |
-
-## Return value
-
- Returns an Elementwise Logical or of x and y.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -50,6 +40,7 @@ bool<> or(any<> x, any<> y);
 This function is supported in the following shader models.
 |Shader Model |	Supported|
 |-------------|----------|
+|HLSL 2021 and higher shader models | yes |
 
 ## Shader Stages
 
@@ -67,4 +58,4 @@ bool3 Cond = X || Y;
 
 
 - [**Intrinsic Functions (DirectX HLSL)**](../direct3dhlsl/dx-graphics-hlsl-intrinsic-functions.md)
-- ** See [HLSL 2021 Logical operation short-circuiting for scalars](https://github.com/microsoft/DirectXShaderCompiler/wiki/HLSL-2021#logical-operation-short-circuiting-for-scalars)**
+- **See [HLSL 2021 Logical operation short-circuiting for scalars](https://github.com/microsoft/DirectXShaderCompiler/wiki/HLSL-2021#logical-operation-short-circuiting-for-scalars)**

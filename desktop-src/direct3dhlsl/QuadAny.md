@@ -1,9 +1,9 @@
 ---
-description: Compares boolean across a quad.
+description: 
 nms.assetid:
 title: QuadAny
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # QuadAny
 
-Compares boolean across a quad.
+
 
 
 ## Syntax
@@ -27,15 +27,6 @@ bool QuadAny(bool cond);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *cond* | [in] A vector or scalar variable of type boolean which we want to evaluate. QuadAny will return true if any component of this variable is true.  |
-
-## Return value
-
- Returns a scalar of type boolean, true if any component of the parameter is true, otherwise it returns false.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -59,9 +50,6 @@ This function is supported in the following shader models.
 * [**Pixel Shader**](../direct3dhlsl/dx-graphics-hlsl-writing-shaders-9.md#pixel-shader-basics)
 * **Node Shader**
 
-## Remarks
-
-QuadAny evaluates whether any threads within a quad meet a condition, facilitating SIMD optimizations in pixel shaders.
 
 ## See also
 

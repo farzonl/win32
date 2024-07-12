@@ -1,9 +1,9 @@
 ---
-description: Unpacks a signed 8-bit value into a signed 32-bit value.
+description: 
 nms.assetid:
 title: unpack_s8s32
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # unpack_s8s32
 
-Unpacks a signed 8-bit value into a signed 32-bit value.
+
 
 
 ## Syntax
@@ -27,15 +27,6 @@ int<4> unpack_s8s32(p32i8 pk);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *pk* | [in] A packed integer input.  |
-
-## Return value
-
- Returns a vector with each component being an int type, unpacked from the input.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -53,9 +44,6 @@ This function is supported in the following shader models.
 ## Shader Stages
 
 
-## Remarks
-
-unpack_s8s32 unpacks a signed 8-bit value into a signed 32-bit value, useful for data conversion in shaders.
 
 ## See also
 

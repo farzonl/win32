@@ -1,9 +1,9 @@
 ---
-description: Is used to dispatch mesh shader threads for processing mesh primitives.
+description: 
 nms.assetid:
 title: DispatchMesh
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # DispatchMesh
 
-Is used to dispatch mesh shader threads for processing mesh primitives.
+
 
 
 ## Syntax
@@ -27,18 +27,6 @@ void DispatchMesh(uint threadGroupCountX, uint threadGroupCountY, uint threadGro
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *threadGroupCountX* | [in] Specifies the number of thread groups dispatched in the x dimension.  |
-| *threadGroupCountY* | [in] Specifies the number of thread groups dispatched in the y dimension.  |
-| *threadGroupCountZ* | [in] Specifies the number of thread groups dispatched in the z dimension.  |
-| *meshPayload* | [in] A structure that includes shader data for the dispatched mesh shader.  |
-
-## Return value
-
- This function does not return a value.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -60,9 +48,6 @@ This function is supported in the following shader models.
 
 * [**Amplification Shader**](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html#amplification-shader-and-mesh-shader)
 
-## Remarks
-
-DispatchMesh dispatches thread groups for mesh shaders, allowing flexible thread group generation based on runtime conditions.
 
 ## See also
 

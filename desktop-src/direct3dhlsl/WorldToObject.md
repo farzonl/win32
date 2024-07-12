@@ -1,9 +1,9 @@
 ---
-description: Converts world-space coordinates to object-space.
+description: 
 nms.assetid:
 title: WorldToObject
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # WorldToObject
 
-Converts world-space coordinates to object-space.
+
 
 
 ## Syntax
@@ -27,14 +27,6 @@ float<3@4> WorldToObject();
 ```
 
 
-## Parameters
-
-This function has no parameters.
-
-
-## Return value
-
- Returns a scalar value of type float that represents the transformation from world space to object space.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -55,9 +47,6 @@ This function is supported in the following shader models.
 * [**Anyhit Shader**](../direct3d12/any-hit-shader.md)
 * [**Closesthit Shader**](../direct3d12/closest-hit-shader.md)
 
-## Remarks
-
-This is the inverse of the ObjectToWorld transformation
 
 ## See also
 

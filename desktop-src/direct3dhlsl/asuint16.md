@@ -1,9 +1,9 @@
 ---
-description: Converts bit patterns to 16-bit unsigned integer values.
+description: 
 nms.assetid:
 title: asuint16
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # asuint16
 
-Converts bit patterns to 16-bit unsigned integer values.
+
 
 
 ## Syntax
@@ -27,15 +27,6 @@ uint16_t<> asuint16(numeric16_only<> x);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *x* | [in] The input value, which can be a scalar, vector, or matrix. The component type of x can be any type.  |
-
-## Return value
-
- Returns a scalar, elementwise vector, or elementwise matrix with its value(s) converted to uint16_t.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -48,13 +39,11 @@ uint16_t<> asuint16(numeric16_only<> x);
 This function is supported in the following shader models.
 |Shader Model |	Supported|
 |-------------|----------|
+|[Shader Model 6.2](https://github.com/microsoft/DirectXShaderCompiler/wiki/Shader-Model-6.2) and higher shader models | yes |
 
 ## Shader Stages
 
 
-## Remarks
-
-asuint16 converts 16-bit integer values to unsigned integers, useful for bit manipulation and packing in shaders.
 
 ## See also
 

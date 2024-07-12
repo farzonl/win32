@@ -1,9 +1,9 @@
 ---
-description: Returns the values of the attributes at the vertex.
+description: 
 nms.assetid:
 title: GetAttributeAtVertex
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # GetAttributeAtVertex
 
-Returns the values of the attributes at the vertex.
+
 
 
 ## Syntax
@@ -27,16 +27,6 @@ numeric<> GetAttributeAtVertex(numeric<> value, uint VertexID);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *value* | [in] A scalar, vector, or matrix input from which to retrieve the attribute.  |
-| *VertexID* | [in] The ID of the vertex at which to retrieve the attribute. Must be an integer.  |
-
-## Return value
-
- Returns the attribute of the specified vertex. The return type can be a scalar, vector, or matrix with a component type of float or int.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -56,9 +46,6 @@ This function is supported in the following shader models.
 
 * [**Pixel Shader**](../direct3dhlsl/dx-graphics-hlsl-writing-shaders-9.md#pixel-shader-basics)
 
-## Remarks
-
-GetAttributeAtVertex retrieves vertex attributes at specific vertices, useful for per-vertex operations in vertex shaders.
 
 ## See also
 

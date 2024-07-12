@@ -1,9 +1,9 @@
 ---
-description: Request a barrier for a set of memory types and/or thread group execution sync.
+description: 
 nms.assetid:
 title: Barrier
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,27 +16,28 @@ api_type:
 
 # Barrier
 
-Request a barrier for a set of memory types and/or thread group execution sync.
+
 
 
 ## Syntax
 
 
 ```syntax
+void Barrier(uint MemoryTypeFlags, uint SemanticFlags);
+```
+
+```syntax
 void Barrier(NodeRecordOrUAV o, uint SemanticFlags);
 ```
 
 
-## Parameters
+## Type Description
 
-| Item | Description |
-|------|-------------|
-| *o* | [in] This is the optional argument, which is typically used to specify a location of an array or a specific area in memory.  |
-| *SemanticFlags* | [in] This is used to apply a specific semantic to the function, for example, ordering and grouping threads.  |
-
-## Return value
-
- This function does not return a value.
+| Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
+|-------|--------------------------------------------------------------------|----------------------------------------------------------------------|------|
+| *ret* | **void** | **void** | 0 |
+| *MemoryTypeFlags* | [**scalar**](../direct3dhlsl/dx-graphics-hlsl-scalar.md) | [**uint**](../WinProg/windows-data-types) | 1 |
+| *SemanticFlags* | [**scalar**](../direct3dhlsl/dx-graphics-hlsl-scalar.md) | [**uint**](../WinProg/windows-data-types) | 1 |
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -55,9 +56,6 @@ This function is supported in the following shader models.
 ## Shader Stages
 
 
-## Remarks
-
-Barrier synchronizes threads within a shader, ensuring data consistency and facilitating parallel computation.
 
 ## See also
 

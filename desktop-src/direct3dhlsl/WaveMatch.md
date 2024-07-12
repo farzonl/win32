@@ -1,9 +1,9 @@
 ---
-description: Checks if all lanes in the wave have the same value.
+description: 
 nms.assetid:
 title: WaveMatch
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # WaveMatch
 
-Checks if all lanes in the wave have the same value.
+
 
 
 ## Syntax
@@ -27,15 +27,6 @@ uint<4> WaveMatch(numeric<> value);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *value* | [in] An input parameter of vector type. This input value is used as the basis for the WaveMatch operation.  |
-
-## Return value
-
- The function returns a vector of type uint. Each component of the returned vector represents a binary mask indicating which lanes of the wave have the same value as the called lane.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -69,9 +60,6 @@ This function is supported in the following shader models.
 * [**Callable Shader**](../direct3d12/callable-shader.md)
 * **Node Shader**
 
-## Remarks
-
-WaveMatch checks if all threads within a wavefront match a given predicate, enabling synchronized control flow in shaders.
 
 ## See also
 

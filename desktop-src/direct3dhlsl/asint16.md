@@ -1,9 +1,9 @@
 ---
-description: Converts bit patterns to 16-bit integer values.
+description: 
 nms.assetid:
 title: asint16
 ms.topic: reference
-ms.date: 07/11/2024
+ms.date: 07/12/2024
 topic_type:
 - APIRef
 - kbSyntax
@@ -16,7 +16,7 @@ api_type:
 
 # asint16
 
-Converts bit patterns to 16-bit integer values.
+
 
 
 ## Syntax
@@ -27,15 +27,6 @@ int16_t<> asint16(numeric16_only<> x);
 ```
 
 
-## Parameters
-
-| Item | Description |
-|------|-------------|
-| *x* | [in] This is a scalar, vector, or matrix parameter to be converted to type int16_t.  |
-
-## Return value
-
- Returns a scalar, elementwise vector, or elementwise matrix with its value(s) converted to int16_t.
 ## Type Description
 
 | Name  | [**Template Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md)| [**Component Type**](../direct3dhlsl/dx-graphics-hlsl-data-types.md) | Size |
@@ -48,13 +39,11 @@ int16_t<> asint16(numeric16_only<> x);
 This function is supported in the following shader models.
 |Shader Model |	Supported|
 |-------------|----------|
+|[Shader Model 6.2](https://github.com/microsoft/DirectXShaderCompiler/wiki/Shader-Model-6.2) and higher shader models | yes |
 
 ## Shader Stages
 
 
-## Remarks
-
-asint16 converts 16-bit integer values to signed integers, useful for unpacking data in shaders.
 
 ## See also
 
